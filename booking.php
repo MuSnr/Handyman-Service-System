@@ -22,10 +22,6 @@ if(isset($_GET['id']) && $_GET['id']!=''){
 $servselect = "SELECT * services";
 $services = array();
 
-
-
-
-
 if(isset($_POST['submit'])){
 
    $uname = mysqli_real_escape_string($conn, $_POST['uname']);
@@ -38,8 +34,6 @@ if(isset($_POST['submit'])){
    $service = $_POST['service_name'];
    $price = $_POST['payment'];
    
-
-
    $select = " SELECT * FROM bookings WHERE service = '$service' && bookdate = '$date'";
 
    $result = mysqli_query($conn, $select);
@@ -48,8 +42,6 @@ if(isset($_POST['submit'])){
 
       $error[] = 'you already booked!';
       
-     
-
    }else{
     $insert = "INSERT INTO bookings(username,bookdate,useremail,userlocation,fundiemail,fundiname,service,price) VALUES('$uname','$date','$uemail','$uloc','$femail','$fname','$service','$price')";
          mysqli_query($conn, $insert);
@@ -58,7 +50,6 @@ if(isset($_POST['submit'])){
    }
 
 };
-
 
 ?>
 <!DOCTYPE html>
@@ -119,9 +110,7 @@ if(isset($_POST['submit'])){
             <label for="floatingInput">Service</label>
           </div>
 
-          
-
-          
+                   
           <div class="form-floating mb-3">
             <input type="text" name="fundiemail" value="<?php echo $row['email']?>" class="form-control rounded-3" id="floatingInput" required placeholder="enter contact">
             
@@ -145,8 +134,6 @@ if(isset($_POST['submit'])){
     </div>
   </div>
 </div>
-
-
 
 </body>
 <style type="text/css">
