@@ -4,7 +4,6 @@
 error_reporting(1);
 
 
-
 if(isset($_POST['submit'])){
   $username = mysqli_escape_string($conn,$_POST['uname']);
   $email = mysqli_escape_string($conn,$_POST['email']);
