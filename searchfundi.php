@@ -7,7 +7,6 @@ $collect = "SELECT * FROM fundis WHERE id='$logid'";
 $result = mysqli_query($conn,$collect);
   $row = mysqli_fetch_array($result);
 
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -105,7 +104,6 @@ $result = mysqli_query($conn,$collect);
             ?>
 </div>
  
-  
 </body>
 
 <style type="text/css">
