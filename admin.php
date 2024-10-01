@@ -9,7 +9,6 @@ if(isset($_POST['admin_submit'])){
   $email = mysqli_escape_string($conn,$_POST['email']);
   $pass = $_POST['password'];
 
-  
   $select = "SELECT * FROM admin WHERE email='$email' && password = '$pass'";
   $res = mysqli_query($conn,$select);
 
@@ -36,9 +35,7 @@ else{
 }
 }
 
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
