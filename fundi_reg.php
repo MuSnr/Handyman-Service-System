@@ -3,8 +3,6 @@
 @include('logheader.php');
 error_reporting(1);
 
-
-
 if(isset($_POST['submit'])){
   $username = mysqli_escape_string($conn,$_POST['uname']);
   $email = mysqli_escape_string($conn,$_POST['email']);
@@ -13,8 +11,6 @@ if(isset($_POST['submit'])){
   $pass = md5($_POST['password']);
   $rpass = md5($_POST['rpassword']);
   
-
-
   $select = "SELECT * FROM fundis WHERE email = '$email' && password ='$pass'";
   $res = mysqli_query($conn,$select);
 
