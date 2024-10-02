@@ -16,7 +16,6 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Database: `fundisdb`
 --
@@ -216,11 +215,9 @@ ALTER TABLE `images`
 --
 ALTER TABLE `services`
   ADD PRIMARY KEY (`id`);
-
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
 --
 -- AUTO_INCREMENT for table `admin`
 --
