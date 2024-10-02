@@ -22,11 +22,6 @@ if(isset($_GET['id']) && $_GET['id']!=''){
 $servselect = "SELECT * services";
 $services = array();
 
-
-
-
-
-
 if(isset($_POST['makepay'])){
   $pay = $_POST['prices'];
 
