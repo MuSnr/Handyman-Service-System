@@ -6,7 +6,6 @@ $collect = "SELECT * FROM fundis WHERE status = 1";
 $result = mysqli_query($conn,$collect);
   $row = mysqli_fetch_array($result);
 
-
 ?>
 <!DOCTYPE html>
 <html>
